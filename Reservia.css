@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+    margin-right: 30px;
+}
+
+section
+{
+	display: flex;
+}
+
+article
+{
+	background-color: #F2F2F2;
+}
+
+aside
+{
+	background-color: #F2F2F2
+}
+
+footer
+{
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+footer ul
+{
+	list-style-type: none;
+}
+
+
+/* Couleur de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2 */

@@ -58,21 +58,21 @@ nav li a
 	padding-top: 50px;
 }
 
-#trouvez /*BARRE DE RECHERCHE*/
-{
-	display: flex;
-	flex-direction: column;
-}
+ /*BARRE DE RECHERCHE*/
 
-#trouvez i
+#barre_recherche i
 {
 	padding: 8px;
 	background-color: #F2F2F2;
 	border-radius: 15px 0 0 15px;
-	font-size: 0.7em;
+	font-size: 1.7em;
 }
 
-
+#barre_recherche
+{
+	height: 50px;
+	width: 420px;
+}
 
 #filtres
 {

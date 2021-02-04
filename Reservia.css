@@ -66,6 +66,7 @@ header
 header h1
 {
 	font-weight: bold;
+	font-size: 2em;
 }
 
 nav
@@ -113,16 +114,30 @@ nav li a
 
 #barre_recherche #icone
 {
-	padding: 8px;
+	padding: 10px;
 	background-color: #F2F2F2;
 	border-radius: 15px 0 0 15px;
-	font-size: 1.7em;
+	font-size: 0.7em;
 }
 
 #barre_recherche
 {
-	height: 50px;
-	width: 420px;
+	padding-top: 20px;
+}
+
+#barre_recherche input
+{
+	padding: 10px;
+}
+
+#bouton
+{
+	background-color: #0065FC;
+	color: #FFFFFF;
+	border-radius: 0 15px 15px 0;
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 #filtres
@@ -137,6 +152,7 @@ nav li a
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
+	cursor: pointer;
 }
 
 #filtres li i
@@ -178,8 +194,13 @@ nav li a
 	background-color: #FFFFFF;
 	color: #0065FC;
 	border: 1px solid #F2F2F2;
-	border-radius: 20px;
-	padding: 20px;
+	border-radius: 100%;
+	height: 10px;
+	width: 10px;
+	padding: 2.5px;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 0.6em;
 }
 
 #content 	/*SECTION N°1*/
@@ -187,14 +208,66 @@ nav li a
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	height: 500px;
 }
+
+#content h2
+{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 
 #hebergement /*ARTICLE N°1 dans SECTION N°1 */
 {
 	background-color: #F2F2F2;
-	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	width: 70%;
+	padding: 50px 30px 25px 30px;
+}
+
+#photos_hebergements
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 318px;
+	width: 100%;
+	padding: 10px 0 15px 0;
+	border: 2px solid red;
+}
+
+.photos_chambres
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	padding: 6px;
+	height: 50%;
+	width: 25%;
+}
+
+.photos_chambres img
+{
+	height: 60%;
+	border-radius: 10px 10px 0 0;
+}
+
+.photos_chambres h3
+{
+	font-weight: bold;
+}
+
+.photos_chambres span
+{
+	font-style: italic;
+}
+
+.fa-star
+{
+	color: #0065FC;
 }
 
 #populaire /*ASIDE N°1 dans SECTION N°1*/
@@ -229,6 +302,7 @@ footer
 footer h2
 {
 	text-align: center;
+	font-weight: bold;
 }
 
 footer ul

@@ -98,6 +98,11 @@ nav li a
 	font-weight: bold;
 }
 
+.nav_hover
+{
+	color: black;
+}
+
 .nav_hover, #inscrire
 {
 	border-top: 2px solid #FFFFFF;
@@ -117,7 +122,6 @@ nav li a
 	padding: 10px;
 	background-color: #F2F2F2;
 	border-radius: 15px 0 0 15px;
-	font-size: 0.7em;
 }
 
 #barre_recherche
@@ -128,6 +132,9 @@ nav li a
 #barre_recherche input
 {
 	padding: 10px;
+	margin-left: -4px;
+	margin-right: -4px;
+	border: 2px solid #f2f2f2;
 }
 
 #bouton
@@ -208,7 +215,6 @@ nav li a
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 500px;
 }
 
 #content h2
@@ -223,7 +229,7 @@ nav li a
 	background-color: #F2F2F2;
 	border-radius: 10px;
 	width: 70%;
-	padding: 50px 30px 25px 30px;
+	padding: 25px 30px 25px 30px;
 }
 
 #photos_hebergements
@@ -232,10 +238,10 @@ nav li a
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 318px;
 	width: 100%;
 	padding: 10px 0 15px 0;
-	border: 2px solid red;
+	margin: 0;
+	line-height: 20px;
 }
 
 .photos_chambres
@@ -245,40 +251,101 @@ nav li a
 	background-color: #FFFFFF;
 	border-radius: 20px;
 	padding: 6px;
-	height: 50%;
+	height: auto;
 	width: 25%;
+	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 .photos_chambres img
 {
-	height: 60%;
+	object-fit: cover;
+	height: 120px;
 	border-radius: 10px 10px 0 0;
 }
+
+.photos_chambres:hover
+{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+
 
 .photos_chambres h3
 {
 	font-weight: bold;
 }
 
-.photos_chambres span
+.prix
 {
 	font-style: italic;
 }
 
-.fa-star
+.€
+{
+	font-weight: bold;
+}
+
+.blue_star
 {
 	color: #0065FC;
 }
 
-#populaire /*ASIDE N°1 dans SECTION N°1*/
+.grey_star 
 {
-	display: flex;
-	background-color: #F2F2F2;
+	color: #f2f2f2;
+}
+
+#afficher_plus
+{
+	font-weight: bold;
+}
+
+#les_plus_populaires /*ASIDE N°1 dans SECTION N°1*/
+{
+    background-color: #F2F2F2;
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	width: 25%;
+	border: 2px solid red;
 }
 
+#title_populaires
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fa-chart-line
+{
+	font-size: 1.5em;
+}
+
+.photos_populaires
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.chambres_populaires
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+}
+
+.chambres_populaires img
+{
+	object-fit: contain;
+	width: 25%;
+	height: 100%;
+}
 
 #activites /*SECTION N°2*/
 {	

@@ -230,6 +230,7 @@ nav li a
 	border-radius: 10px;
 	width: 70%;
 	padding: 25px 30px 25px 30px;
+	margin-right: 10px;
 }
 
 #photos_hebergements
@@ -241,7 +242,7 @@ nav li a
 	width: 100%;
 	padding: 10px 0 15px 0;
 	margin: 0;
-	line-height: 20px;
+	line-height: 25px;
 }
 
 .photos_chambres
@@ -254,7 +255,7 @@ nav li a
 	height: auto;
 	width: 25%;
 	margin-bottom: 20px;
-	overflow: hidden;
+	box-shadow: 5px 5px 5px grey;
 }
 
 .photos_chambres img
@@ -264,17 +265,15 @@ nav li a
 	border-radius: 10px 10px 0 0;
 }
 
-.photos_chambres:hover
+.photos_chambres:hover, .chambres_populaires:hover
 {
-	transform: scale(1.2);
 	cursor: pointer;
 }
 
-
-
-.photos_chambres h3
+.photos_chambres h3, .textes_populaires h3
 {
 	font-weight: bold;
+	font-size: 1.3em;
 }
 
 .prix
@@ -300,21 +299,24 @@ nav li a
 #afficher_plus
 {
 	font-weight: bold;
+	cursor: pointer;
 }
 
 #les_plus_populaires /*ASIDE N°1 dans SECTION N°1*/
 {
     background-color: #F2F2F2;
-	border: 1px solid #F2F2F2;
-	border-radius: 10px;
-	width: 25%;
-	border: 2px solid red;
+   	border-radius: 10px;
+	width: 30%;
+	padding: 25px 30px 25px 30px;
+	margin-left: 10px;
 }
 
 #title_populaires
 {
 	width: 100%;
+	height: 10%;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -328,23 +330,45 @@ nav li a
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: 90%;
+	width: 100%;
 }
 
 .chambres_populaires
 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	height: 30%;
 	width: 100%;
-	height: auto;
 	background-color: #FFFFFF;
+	border-radius: 20px;
+	padding: auto;
+	box-shadow: 5px 5px 5px grey;
+	display: flex;
 }
 
 .chambres_populaires img
 {
-	object-fit: contain;
-	width: 25%;
-	height: 100%;
+	object-fit: cover;
+	border-radius: 10px 0 0 10px;
+	height: auto;
+	width: 30%;
+	margin-right: 10px;
+}
+
+.textes_populaires
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 15px 0 0 10px;
+	position: relative;
+	width: 160px; 
+	line-height: 1.5em;
+}
+
+.stars
+{
+	position: absolute;
+	bottom: 0;
 }
 
 #activites /*SECTION N°2*/

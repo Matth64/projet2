@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,6 +54,11 @@ body
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
 	overflow-x: hidden;
+}
+
+#bloc_page
+{
+	padding: 0 60px 0 60px;
 }
 
 header
@@ -275,17 +280,16 @@ nav li a
 .photos_chambres h3, .textes_populaires h3
 {
 	font-weight: bold;
-	font-size: 1.3em;
+}
+
+.stars_chambres
+{
+	bottom: 0;
 }
 
 .prix
 {
-	font-style: italic;
-}
-
-.euro
-{
-	font-weight: bold;
+	font-style: bold;
 }
 
 .blue_star
@@ -385,7 +389,7 @@ nav li a
 {
 	display: flex;
 	height: 500px;
-	padding: 20px
+	padding: 20px 0;
 }
 
 .photos_activites_3
@@ -393,16 +397,26 @@ nav li a
 	width: 50%;
 	height: auto;
 	display: flex;
-	justify-content: space-around;
+}
+
+.photos_activites_3#gauche
+{
+	padding-right: 20px;
+}
+
+.photos_activites_3#droite
+{
+	padding-left: 20px;
 }
 
 .grande_photo
 {
-	width: 40%;
+	width: 50%;
 	height: auto;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px grey;
 	cursor: pointer;
+	margin-right: 20px;
 }
 
 .grande_photo img
@@ -418,8 +432,9 @@ nav li a
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 40%;
+	width: 50%;
 	height: auto;
+	margin-left: 20px;
 }
 
 .petites_photos
@@ -452,9 +467,13 @@ footer
 	background-color: #F2F2F2;
 	border-radius: 10px;
 	display: flex;
-	justify-content: space-between;
 	text-align: left;
-	padding: 30px 0 30px 0;
+	padding: 30px 60px 30px 60px;
+}
+
+footer .div_footer
+{
+	width: 33.33%;
 }
 
 footer h2

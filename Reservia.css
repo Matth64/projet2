@@ -70,7 +70,7 @@ header
 header h1
 {
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 nav
@@ -151,6 +151,11 @@ nav li a
 	cursor: pointer;
 }
 
+#icone_search i
+{
+	font-size: 0;
+}
+
 #filtres
 {
 	display: flex;
@@ -222,10 +227,10 @@ nav li a
 	justify-content: space-between;
 }
 
-#content h2, #activites h2
+#content h2, #title_populaires
 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 
@@ -289,7 +294,7 @@ nav li a
 
 .prix
 {
-	font-style: bold;
+	font-weight: bold;
 }
 
 .blue_star
@@ -489,5 +494,161 @@ footer ul
 	line-height: 1.5em;
 }
 
+@media screen and (max-width: 650px)
+{
 
-/* Couleur de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2 */
+	#bloc_page
+	{
+		padding: 0;
+	}
+
+	nav
+	{
+		width: 25%;
+	}
+
+	nav ul
+	{
+		flex-wrap: wrap-reverse;
+	}
+
+	.nav_hover, #inscrire
+	{
+		border-top: 0;
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	.nav_hover:hover
+	{
+		border-top: 0;
+		color: #0065FC;
+		border-bottom: 2px solid: #0065FC;
+	}
+
+	#trouvez
+	{
+		width: 100%;
+	}
+
+	#search_text
+	{
+		font-size: 0;
+	}
+
+	#icone_search i
+	{
+		font-size: 1em;
+	}
+
+	#filtres
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#filtres ul
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#filtres ul li
+	{
+		margin: auto;
+	}
+
+	#content
+	{
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	#hebergement
+	{
+		width: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-right: 0;
+	}
+
+	#photos_hebergements
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.photos_chambres
+	{
+		width: 100%;
+	}
+
+	#les_plus_populaires
+	{
+		width: auto;
+		margin-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.photos_populaires
+	{
+		width: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.textes_populaires
+	{
+		line-height: 1em;
+	}
+
+	#container_photos_activites
+	{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: auto;
+		padding:0;
+	}
+
+	.photos_activites_3
+	{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.photos_activites_3#gauche
+	{
+		padding-right: 0px;
+	}
+
+	.photos_activites_3#droite
+	{
+		padding-left: 0px;
+	}
+
+	.grande_photo
+	{
+		width: 100%;
+		height: auto;
+		margin-right: 0px;
+	}
+
+	.photos_activites_petites
+	{
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+	}
+
+	.petites_photos
+	{
+		height: auto;
+		width: 100%;
+	}
+
+}
